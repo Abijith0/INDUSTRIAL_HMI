@@ -65,7 +65,7 @@ This HMI was engineered for an **Industrial Leak Testing Machine** used in autom
 
 ```mermaid
 graph TD
-    PLC[PLC / Controller] -->|Modbus TCP / OPC UA| HMI[Python HMI (PySide6)]
-    HMI -->|Log Data| DB[(SQLite Database)]
-    HMI -->|Visualize| UI[Operator Dashboard]
-    HMI -->|Generate| RPT[PDF & Excel Reports]
+    PLC["PLC / Controller"] -->|"Modbus TCP / OPC UA"| HMI["Python HMI (PySide6)"]
+    HMI -->|"Log Data"| DB[("SQLite Database")]
+    HMI -->|"Visualize"| UI["Operator Dashboard"]
+    HMI -->|"Generate"| RPT["PDF & Excel Reports"]
