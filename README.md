@@ -69,3 +69,50 @@ graph TD
     HMI -->|"Log Data"| DB[("SQLite Database")]
     HMI -->|"Visualize"| UI["Operator Dashboard"]
     HMI -->|"Generate"| RPT["PDF & Excel Reports"]
+
+
+
+
+
+
+
+
+---
+
+## ▶ How to Run
+
+### Requirements
+* Python 3.10+
+* Windows OS (Recommended)
+
+### Installation
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/Abijith0/INDUSTRIAL_HMI.git](https://github.com/Abijith0/INDUSTRIAL_HMI.git)
+    cd INDUSTRIAL_HMI
+    ```
+
+2.  **Install dependencies:**
+    ```bash
+    pip install PySide6
+    ```
+
+3.  **Run the application:**
+    ```bash
+    python MAIN.PY
+    ```
+    *(Note: The application includes a **Simulation Mode**, so it will generate dummy data even without a PLC connected.)*
+
+---
+
+## 📄 Sample Reports
+- [Download Sample PDF Report](ProductionReport_18-02-2026.pdf)
+- [Download Sample Excel Sheet](ProductionReport_18-02-2026.xlsx)
+
+---
+
+## 👨‍💻 Developer
+**Abijith Harishkumar**
+*Automation Engineer | IIoT & Python Developer*
+
+Focused on bridging the gap between **OT (Operational Technology)** and **IT** by combining PLC systems with modern software architecture.
