@@ -60,25 +60,6 @@ This HMI was engineered for an **Industrial Leak Testing Machine** used in autom
 * **Excel/CSV Export:** Raw data export for external analysis.
 
 ---
-
-## 🧱 System Architecture
-
-```mermaid
-graph TD
-    PLC["PLC / Controller"] -->|"Modbus TCP / OPC UA"| HMI["Python HMI (PySide6)"]
-    HMI -->|"Log Data"| DB[("SQLite Database")]
-    HMI -->|"Visualize"| UI["Operator Dashboard"]
-    HMI -->|"Generate"| RPT["PDF & Excel Reports"]
-
-
-
-
-
-
-
-
----
-
 ## ▶ How to Run
 
 ### Requirements
@@ -116,3 +97,12 @@ graph TD
 *Automation Engineer | IIoT & Python Developer*
 
 Focused on bridging the gap between **OT (Operational Technology)** and **IT** by combining PLC systems with modern software architecture.
+
+## 🧱 System Architecture
+
+```mermaid
+graph TD
+    PLC["PLC / Controller"] -->|"Modbus TCP / OPC UA"| HMI["Python HMI (PySide6)"]
+    HMI -->|"Log Data"| DB[("SQLite Database")]
+    HMI -->|"Visualize"| UI["Operator Dashboard"]
+    HMI -->|"Generate"| RPT["PDF & Excel Reports"]
